@@ -3,6 +3,7 @@ import { consultarApi } from "../helpers/queries";
 import ItemProducto from "./admiProductos/ItemProducto";
 import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 
 const Administrador = () => {
 const [productos, setProductos] = useState([])
@@ -29,9 +30,9 @@ const [productos, setProductos] = useState([])
     <section className="container mainSection">
       <div className="d-flex justify-content-between align-items-center mt-5">
         <h1 className="display-4 ">Productos disponibles</h1>
-        <Button to="/administrar/crear" className="btn btn-primary">
+        <Link to="/administrar/crear" className="btn btn-primary">
           Agregar
-        </Button>
+        </Link>
       </div>
       <hr />
       <Table responsive striped bordered hover>
@@ -47,7 +48,10 @@ const [productos, setProductos] = useState([])
         </thead>
         <tbody>
           {/* aqui tengo que hacer un map */}
-          <ItemProducto></ItemProducto>
+          {
+            productos.map((producto)=><ItemProducto key={producto.id} producto={producto}></ItemProducto>)
+          }
+          
         </tbody>
       </Table>
     </section>
