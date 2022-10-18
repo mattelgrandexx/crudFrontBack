@@ -1,17 +1,34 @@
+import { useEffect } from "react";
 import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import Swal from "sweetalert2";
-import { editarProductoAPI } from "../../helpers/queries";
+import { useParams } from "react-router-dom";
+import { obtenerProductoAPI } from "../../helpers/queries";
 
 const EditarProducto = () => {
-  const {register, handleSubmit, formState:{errors}} = useForm()
+  const {register, handleSubmit, formState:{errors}, setValue} = useForm()
+  // buscamos el parametro de la ruta
+  const{id} = useParams();
 
-  // mi funcion luego de que pase la validacion de react
-   const onSubmit = (datos)=>{
-    console.log(datos)
-    console.log("desde editar producto")
-   } 
-return (
+ 
+  useEffect(()=>{
+    obtenerProductoAPI(id).then((respuesta)=>{
+      if (respuesta.status === 200){
+        console.log(respuesta);
+        setValue("nombreProducto", respuesta.dato.nombreProducto);
+        setValue("precio", respuesta.dato.precio);
+        setValue("imagen", respuesta.dato.imagen);
+        setValue("categoria", respuesta.dato.categoria);
+      }
+    })
+    },[])
+  
+  const onSubmit = (datos)=>{
+   console.log(datos)
+   console.log("desde editar producto")
+  //  pedir a la API actualizar el producto
+  } 
+
+  return (
     <section className="container mainSection">
       <h1 className="display-4 mt-5">Editar producto</h1>
       <hr />
