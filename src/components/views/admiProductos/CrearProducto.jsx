@@ -1,16 +1,32 @@
 import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
+import { crearProductoAPI } from "../../helpers/queries";
+import { useNavigate } from "react-router-dom";
 
 
 const CrearProducto = () => {
   // validaciones de react-hook-form
- const {register, handleSubmit, formState:{errors}} = useForm()
+ const {register, handleSubmit, formState:{errors}, reset} = useForm();
+// inicializar useNavigate
+const navegacion = useNavigate();
+
 // mi funcion luego de que pase la validacion de react
  const onSubmit = (datos)=>{
   console.log(datos)
   // enviar la peticion a la API
-  // si la respuesta es correcta indicarle al usuario
-
+  crearProductoAPI(datos).then((respuesta)=>{
+console.log(respuesta)
+if(respuesta.status === 201){
+Swal.fire("Producto creado", "El producto fue creado exitosamente", "success");
+// resetear el formulario
+reset();
+// redireccionar
+navegacion("/administrar");
+}else{
+  Swal.fire("Ocurrio un error", "El producto no pudo ser creado exitosamente", "error");
+}
+  })
  }
 
 

@@ -1,25 +1,67 @@
 {
-    "productos":[
-        {
-            "nombreProducto":"café",
-            "imagen":"https://images.pexels.com/photos/11942622/pexels-photo-11942622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "precio": 300,
-            "categoria":"bebida-caliente",
-            "id":1    
-        },
-        {
-            "nombreProducto":"brownie",
-            "imagen":"https://images.pexels.com/photos/5848119/pexels-photo-5848119.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "precio": 250,
-            "categoria":"dulce",
-            "id":2    
-        },
-        {
-            "nombreProducto":"licuado",
-            "imagen":"https://images.pexels.com/photos/1150682/pexels-photo-1150682.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "precio": 450,
-            "categoria":"bebida-fria",
-            "id":3    
-        }
-    ]
+  "productos": [
+    {
+      "nombreProducto": "café",
+      "imagen": "https://images.pexels.com/photos/11942622/pexels-photo-11942622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "precio": 300,
+      "categoria": "bebida-caliente",
+      "id": 1
+    },
+    {
+      "nombreProducto": "brownie",
+      "imagen": "https://images.pexels.com/photos/5848119/pexels-photo-5848119.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "precio": 250,
+      "categoria": "dulce",
+      "id": 2
+    },
+    {
+      "nombreProducto": "licuado",
+      "imagen": "https://images.pexels.com/photos/1150682/pexels-photo-1150682.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "precio": 450,
+      "categoria": "bebida-fria",
+      "id": 3
+    },
+    {
+      "nombreProducto": "café expreso",
+      "imagen": "https://images.pexels.com/photos/11942622/pexels-photo-11942622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "precio": 400,
+      "categoria": "bebida-caliente",
+      "id": 4
+    },
+    {
+      "nombreProducto": "casfe",
+      "precio": "50",
+      "imagen": "http://www.arimetrics.com/blog/.",
+      "categoria": "bebida-fria",
+      "id": 5
+    },
+    {
+      "nombreProducto": "te de manzanilla",
+      "precio": "60",
+      "imagen": "http://www.arimetrics.com/blog/.",
+      "categoria": "bebida-caliente",
+      "id": 6
+    },
+    {
+      "nombreProducto": "factura",
+      "precio": "50",
+      "imagen": "http://www.arimetrics.com/blog/",
+      "categoria": "bebida-fria",
+      "id": 7
+    },
+    {
+      "nombreProducto": "tarta de manzana",
+      "precio": "200",
+      "imagen": "http://www.arimetrics.com/blog/",
+      "categoria": "dulce",
+      "id": 8
+    },
+    {
+      "nombreProducto": "chocotorta",
+      "precio": "250",
+      "imagen": "https://www.pexels.com/es-es/foto/brownies-horneados-en-un-plato-3666/",
+      "categoria": "dulce",
+      "id": 9
+    }
+  ]
 }
