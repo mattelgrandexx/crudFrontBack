@@ -33,10 +33,11 @@ export const crearProductoAPI=async(producto)=>{
     }
 }
 
-export const editarProductoAPI=async(producto)=>{
+// PETICION PUT
+export const editarProductoAPI=async(id, producto)=>{
     try {
-        const respuesta = await fetch(URL,{
-            method:"POST",
+        const respuesta = await fetch(URL+"/"+id,{
+            method:"PUT",
             headers:{
                 "Content-Type":"application/json"
             },
