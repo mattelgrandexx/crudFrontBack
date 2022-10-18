@@ -4,20 +4,13 @@ import Swal from "sweetalert2";
 import { editarProductoAPI } from "../../helpers/queries";
 
 const EditarProducto = () => {
-
   const {register, handleSubmit, formState:{errors}} = useForm()
+
   // mi funcion luego de que pase la validacion de react
    const onSubmit = (datos)=>{
     console.log(datos)
-    editarProductoAPI(datos).then((respuesta)=>{
-      console.log(respuesta)
-      if(respuesta.status === 201){
-      Swal.fire("Producto editado", "El producto fue editado exitosamente", "success")
-      }else{
-        Swal.fire("Ocurrio un error", "El producto no pudo ser editado exitosamente", "error")
-      } })
-    }
-    
+    console.log("desde editar producto")
+   } 
 return (
     <section className="container mainSection">
       <h1 className="display-4 mt-5">Editar producto</h1>
