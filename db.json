@@ -8,60 +8,25 @@
       "id": 1
     },
     {
-      "nombreProducto": "brownie",
-      "imagen": "https://images.pexels.com/photos/5848119/pexels-photo-5848119.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "precio": 250,
-      "categoria": "dulce",
+      "nombreProducto": "Jugo de Naranja",
+      "precio": "200",
+      "imagen": "https://www.pexels.com/es-es/foto/fotografia-de-enfoque-selectivo-de-jugo-de-naranja-puro-158053/",
+      "categoria": "bebida-fria",
       "id": 2
     },
     {
-      "nombreProducto": "licuado",
-      "imagen": "https://images.pexels.com/photos/1150682/pexels-photo-1150682.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "precio": 450,
-      "categoria": "bebida-fria",
-      "id": 3
-    },
-    {
-      "nombreProducto": "café expreso",
-      "imagen": "https://images.pexels.com/photos/11942622/pexels-photo-11942622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "precio": 400,
-      "categoria": "bebida-caliente",
-      "id": 4
-    },
-    {
-      "nombreProducto": "casfe",
-      "precio": "50",
-      "imagen": "http://www.arimetrics.com/blog/.",
-      "categoria": "bebida-fria",
-      "id": 5
-    },
-    {
       "nombreProducto": "te de manzanilla",
-      "precio": "60",
-      "imagen": "http://www.arimetrics.com/blog/.",
+      "precio": "150",
+      "imagen": "https://www.pexels.com/es-es/foto/fotografia-de-enfoque-selectivo-de-jugo-de-naranja-puro-158053/",
       "categoria": "bebida-caliente",
-      "id": 6
+      "id": 3
     },
     {
       "nombreProducto": "factura",
       "precio": "50",
-      "imagen": "http://www.arimetrics.com/blog/",
-      "categoria": "bebida-fria",
-      "id": 7
-    },
-    {
-      "nombreProducto": "tarta de manzana",
-      "precio": "200",
-      "imagen": "http://www.arimetrics.com/blog/",
+      "imagen": "https://www.pexels.com/es-es/foto/fotografia-de-enfoque-selectivo-de-jugo-de-naranja-puro-158053/",
       "categoria": "dulce",
-      "id": 8
-    },
-    {
-      "nombreProducto": "chocotorta",
-      "precio": "250",
-      "imagen": "https://www.pexels.com/es-es/foto/brownies-horneados-en-un-plato-3666/",
-      "categoria": "dulce",
-      "id": 9
+      "id": 4
     }
   ]
 }

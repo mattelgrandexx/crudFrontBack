@@ -49,7 +49,7 @@ const [productos, setProductos] = useState([])
         <tbody>
           {/* aqui tengo que hacer un map */}
           {
-            productos.map((producto)=><ItemProducto key={producto.id} producto={producto}></ItemProducto>)
+            productos.map((producto)=><ItemProducto key={producto.id} producto={producto} setProductos={setProductos}></ItemProducto>)
           }
           
         </tbody>
