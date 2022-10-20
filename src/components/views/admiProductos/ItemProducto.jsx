@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 import { borrarProductoAPI, consultarApi } from "../../helpers/queries";
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
+import CardProducto from "./CardProducto";
 
 const ItemProducto = ({producto, setProductos}) => {
 const{id, nombreProducto, categoria, imagen, precio} = {...producto}

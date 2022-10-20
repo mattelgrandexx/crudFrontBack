@@ -1,7 +1,7 @@
 {
   "productos": [
     {
-      "nombreProducto": "café",
+      "nombreProducto": "Café doble",
       "precio": "100",
       "imagen": "https://images.pexels.com/photos/11942622/pexels-photo-11942622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "categoria": "bebida-caliente",
@@ -10,23 +10,51 @@
     {
       "nombreProducto": "Jugo de Naranja",
       "precio": "200",
-      "imagen": "https://www.pexels.com/es-es/foto/fotografia-de-enfoque-selectivo-de-jugo-de-naranja-puro-158053/",
+      "imagen": "https://images.pexels.com/photos/1337824/pexels-photo-1337824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "categoria": "bebida-fria",
       "id": 2
     },
     {
-      "nombreProducto": "te de manzanilla",
-      "precio": "150",
-      "imagen": "https://www.pexels.com/es-es/foto/fotografia-de-enfoque-selectivo-de-jugo-de-naranja-puro-158053/",
-      "categoria": "bebida-caliente",
+      "nombreProducto": "Brownie",
+      "precio": "148",
+      "imagen": "https://images.pexels.com/photos/5386662/pexels-photo-5386662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "dulce",
       "id": 3
     },
     {
-      "nombreProducto": "factura",
-      "precio": "50",
-      "imagen": "https://www.pexels.com/es-es/foto/fotografia-de-enfoque-selectivo-de-jugo-de-naranja-puro-158053/",
-      "categoria": "dulce",
+      "nombreProducto": "Smoothie",
+      "precio": "250",
+      "imagen": "https://images.pexels.com/photos/4753640/pexels-photo-4753640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "bebida-fria",
       "id": 4
+    },
+    {
+      "nombreProducto": "Ensalada Benito",
+      "precio": "300",
+      "imagen": "https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "salado",
+      "id": 5
+    },
+    {
+      "nombreProducto": "Wrap de pollo",
+      "precio": "400",
+      "imagen": "https://images.pexels.com/photos/13292629/pexels-photo-13292629.png",
+      "categoria": "salado",
+      "id": 6
+    },
+    {
+      "nombreProducto": "Desayuno vegano",
+      "precio": "450",
+      "imagen": "https://images.pexels.com/photos/4099235/pexels-photo-4099235.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "categoria": "salado",
+      "id": 7
+    },
+    {
+      "nombreProducto": "Café con leche",
+      "precio": "148",
+      "imagen": "https://images.pexels.com/photos/10943224/pexels-photo-10943224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "bebida-caliente",
+      "id": 8
     }
   ]
 }
