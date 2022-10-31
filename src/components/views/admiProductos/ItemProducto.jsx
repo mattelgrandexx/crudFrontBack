@@ -3,12 +3,12 @@ import { Button } from "react-bootstrap";
 import { borrarProductoAPI, consultarApi } from "../../helpers/queries";
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
-import CardProducto from "./CardProducto";
+
 
 const ItemProducto = ({producto, setProductos}) => {
-const{id, nombreProducto, categoria, imagen, precio} = {...producto}
+const{_id, nombreProducto, categoria, imagen, precio} = {...producto}
 const borrarProducto = ()=>{
-  borrarProductoAPI(id).then((respuesta)=>{
+  borrarProductoAPI(_id).then((respuesta)=>{
   if(respuesta.status === 200){
     // se pudo borrar el producto
     Swal.fire("Producto eliminado", "El producto fue eliminado exitosamente", "success");
@@ -25,14 +25,14 @@ const borrarProducto = ()=>{
 
   return (
     <tr>
-      <td>{id}</td>
+      <td>{_id}</td>
       {/* <td>{props.producto.nombreProducto}</td> */}
       <td>{nombreProducto}</td>
       <td>${precio}</td>
       <td>{imagen}</td>
   <td>{categoria}</td>
   <td>
-        <Link className="btn btn-warning" to={`/administrar/editar/${id}`}>
+        <Link className="btn btn-warning" to={`/administrar/editar/${_id}`}>
           Editar
         </Link>
         <Button variant="danger" onClick={borrarProducto}>

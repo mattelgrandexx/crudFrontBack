@@ -1,4 +1,5 @@
 const URL = process.env.REACT_APP_API_CAFE;
+const URL2 = process.env.REACT_APP_API_CAFE_2;
 // peticion GET para obtener el arreglo de productos o un producto
 // peticion POST para crear un producto (generalmente en formato JSON), tambien se usa en el login
 // peticion PUT para modificar un producto
@@ -16,7 +17,7 @@ export const consultarApi=async()=>{
     }
 }
 
-// PETICION POST
+// PETICION POST PARA DAR DE ALTA PRODUCTOS
 export const crearProductoAPI=async(producto)=>{
     try {
         const respuesta = await fetch(URL,{
@@ -32,6 +33,24 @@ export const crearProductoAPI=async(producto)=>{
         return false;
     }
 }
+// peticion POST para crear Usuario
+export const crearUsuarioAPI=async(datosUsuario)=>{
+    try {
+        const respuesta = await fetch(URL2,{
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify(datosUsuario)
+        });
+        console.log(URL2);
+        return respuesta;
+    } catch (error) {
+        console.log(error);
+        return false;
+    }
+}
+
 
 // PETICION PUT
 export const editarProductoAPI=async(id, producto)=>{
@@ -75,6 +94,19 @@ export const obtenerProductoAPI=async(id)=>{
     } catch (error) {
         console.log(error);
         return false;
+    }
+}
+
+
+export const consultarUsuarioAPI = async()=>{
+    try {
+        const respuesta = await fetch(URL2);
+        const listaUsuarios = await respuesta.json();
+        return listaUsuarios;
+    } catch (error) {
+        console.log(error);
+        return false;
+        
     }
 }
 

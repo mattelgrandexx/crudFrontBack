@@ -9,6 +9,8 @@ import EditarProducto from "./components/views/admiProductos/EditarProducto";
 import Menu from "./components/common/Menu"
 import Footer from "./components/common/Footer"
 import "../src/app.css"
+import Login from "./components/views/Login"
+import Registro from "./components/views/Registro"
 
 function App() {
   return (
@@ -33,7 +35,17 @@ function App() {
           path="/administrar/editar/:id"
           element={<EditarProducto></EditarProducto>}
         ></Route>
-         <Route exact path="/detalle-producto" element={<DetalleProducto></DetalleProducto>}></Route>
+         <Route
+          exact
+          path="/login"
+          element={<Login></Login>}
+        ></Route>
+        <Route
+          exact
+          path="/registro"
+          element={<Registro></Registro>}
+        ></Route>
+         <Route exact path="/detalle/:id" element={<DetalleProducto></DetalleProducto>}></Route>
         <Route path="*" element={<Error404></Error404>}></Route>
       </Routes>
     <Footer></Footer>
