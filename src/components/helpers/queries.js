@@ -97,7 +97,7 @@ export const obtenerProductoAPI=async(id)=>{
     }
 }
 
-
+// crear usuario
 export const consultarUsuarioAPI = async()=>{
     try {
         const respuesta = await fetch(URL2);
@@ -109,4 +109,7 @@ export const consultarUsuarioAPI = async()=>{
         
     }
 }
+
+// login
+
 

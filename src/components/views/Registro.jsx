@@ -22,7 +22,7 @@ const Registro = () => {
       // redireccionar
       navegacion("/");
       }else{
-        Swal.fire("Ocurrio un error", "El producto no pudo ser creado exitosamente", "error");
+        Swal.fire("Ocurrio un error", "El usuario no pudo ser creado exitosamente", "error");
       }
         })
        }
